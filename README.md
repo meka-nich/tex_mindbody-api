@@ -20,6 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
+```
 TexMindbody::Api.configure do |config|
   config.username = "Siteowner"
   config.password = "apitest1234"
@@ -29,6 +30,7 @@ end
 
 TexMindbody::Api.issue
 clients = TexMindbody::Api.clients SearchText: "Smith"
+```
 
 ## Development
 
