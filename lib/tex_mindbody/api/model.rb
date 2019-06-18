@@ -1,7 +1,7 @@
 module TexMindbody
     module Api
         module Model
-            class ModelBase
+            class ModelBase < OpenStruct
             end
         end
     end
