@@ -1,8 +1,6 @@
 # TexMindbody::Api
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tex_mindbody/api`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Thei gem is a wrapper for the v6 API from Mindbody. Currently it supports a very limited subset of calls
 
 ## Installation
 
@@ -22,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+TexMindbody::Api.configure do |config|
+  config.username = "Siteowner"
+  config.password = "apitest1234"
+  config.api_key = "YOUR API KEY"
+  config.site_id = "-99"
+end
+
+TexMindbody::Api.issue
+clients = TexMindbody::Api.clients SearchText: "Smith"
 
 ## Development
 
@@ -32,5 +38,5 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tex_mindbody-api.
+Bug reports and pull requests are welcome on GitHub at https://github.com/meka-nich/tex_mindbody-api.
 

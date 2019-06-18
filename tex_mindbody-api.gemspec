@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Mindbody v6 API}
   spec.description   = %q{TEX Mindbody v6 API wrapper}
-  spec.homepage      = "https://meka.digital"
+  spec.homepage      = "https://github.com/meka-nich/tex_mindbody-api"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
